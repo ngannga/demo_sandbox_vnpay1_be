@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo_sandboxvnpay_be
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/demo_vnpay
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+application:
+  security:
+    jwt:
+      secret-key: 9CB355DFA6EC8882869E3D511FE82
+      expiration: 86400000
+      refresh-token:
+        expiration: 604800000
